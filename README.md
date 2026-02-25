@@ -41,7 +41,7 @@ I’m deploying a series of lightweight Solidity contracts on the Base mainnet w
 
 </div>
 
-■ Name : BASE-1
+■ Name : BASE-1.sol
 
 ```
 // SPDX-License-Identifier: MIT
@@ -56,7 +56,7 @@ contract BASE1 {
 }
 ```
 
-■ Name : BASE-2
+■ Name : BASE-2.sol
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -68,7 +68,7 @@ contract BASE2 {
 }
 ```
 
-■ Name : BASE-3
+■ Name : BASE-3.sol
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -81,7 +81,7 @@ contract BASE3 {
     }
 }
 ```
-■ Name : BASE-4
+■ Name : BASE-4.sol
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -95,7 +95,7 @@ contract BASE4 {
 }
 ```
 
-■ Name : BASE-5
+■ Name : BASE-5.sol
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -109,7 +109,7 @@ contract BASE5 {
 }
 ```
 
-■ Name : BASE-6
+■ Name : BASE-6.sol
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -123,7 +123,7 @@ contract BASE6 {
 }
 ```
 
-■ Name : BASE-7
+■ Name : BASE-7.sol
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -136,7 +136,7 @@ contract BASE7 {
     }
 }
 ```
-■ Name : BASE-8
+■ Name : BASE-8.sol
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -147,7 +147,7 @@ contract BASE8 {
     }
 }
 ```
-■ Name : BASE-9
+■ Name : BASE-9.sol
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -158,7 +158,7 @@ contract BASE9 {
     }
 }
 ```
-■ Name : BASE-10
+■ Name : BASE-10.sol
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -171,7 +171,7 @@ contract BASE10 {
     }
 }
 ```
-■ Name : BASE-11
+■ Name : BASE-11.sol
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -184,7 +184,7 @@ contract BASE11 {
     }
 }
 ```
-■ Name : BASE-12
+■ Name : BASE-12.sol
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -197,7 +197,7 @@ contract BASE12 {
     }
 }
 ```
-■ Name : BASE-13
+■ Name : BASE-13.sol
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -210,7 +210,7 @@ contract BASE13 {
     }
 }
 ```
-■ Name : BASE-14
+■ Name : BASE-14.sol
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;

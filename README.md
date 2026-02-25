@@ -1,6 +1,6 @@
 <div align="left">
 
-##  **Introduction📜**
+##  **Architecture Overview📜**
 
 I’m deploying a series of lightweight Solidity contracts on the Base mainnet with one clear goal and keep it minimal, efficient and cost-aware.
 
@@ -8,182 +8,210 @@ I’m deploying a series of lightweight Solidity contracts on the Base mainnet w
 
 <div align="center">
 
-#  📱 **Abacus [Base Mini App]** 📱
-
+##  **Deployment Prerequisites⚙️**
 
 </div>
 
 
-##  **Basic-Requirements⚙️**
+1.) Base Guild Link :- https://guild.xyz/base/builders-founders
 
-1.) Create V0 account :- https://v0.app/ref/S4PSH0
+2.) Chainlist (Base Mainnet Chain) :- https://chainlist.org/?search=base
 
-2.) Create @farcaster_xyz :- https://farcaster.xyz/~/code/039FJB
+3.) Remix :- https://remix.ethereum.org/#lang=en&optimize&runs=200&evmVersion&version=soljson-v0.8.33+commit.64118f21.js
 
-3.) Create @baseapp :- https://base.app/invite/friends/S7ZX04QK
+* >You will need to perform this process using a MetaMask wallet connected to the Base mainnet (EVM).
 
-* >Must link your farcaster account in base app
+* >To execute this on the Base mainnet, you’ll need to hold at least $0.50 worth of ETH on the Base network to cover deployment and transaction fees.
 
 
 <div align="center">
   
-##  **Required Steps📔**
+ ## **Execution Steps📔**
 
 </div>
 
-■ Step 1 : 
+■ Name : BASE-1
 
-Create the Calculator Application 
 ```
-- Built a functional calculator with add, subtract, multiply, and divide operations
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
-- Creat /components/calculator.tsx with full calculator logic and UI
+contract BASE1 {
+    uint public x;
 
-- Creat /app/page.tsx as the main entry point
-
-- Use React hooks (useState) for state management
-
-- Designe with a modern dark theme using Tailwind CSS
-```
-
-■ Step 2 : 
-
-* >Deploy the project & copy the url & save it .
-
-
-■ Step 3 :  
-```
-Create the Farcaster Manifest File
-
-- Created /public/.well-known/farcaster.json - This file tells Base about our app
-- Configured app metadata:
-
-My project name : 
-
-My url link : 
-
-{
-  "accountAssociation": {
-    "header": "",
-    "payload": "",
-    "signature": ""
-  },
-  "miniapp": {
-    "version": "1",
-    "name": "My project name",
-    "subtitle": "Fast & Easy Math",
-    "description": "A simple calculator for basic arithmetic operations",
-    "homeUrl": "https://your-domain.com",
-    "iconUrl": "https://your-domain.com/icon.png",
-    "splashImageUrl": "https://your-domain.com/splash.png",
-    "splashBackgroundColor": "#1a1a1a",
-    "screenshotUrls": [
-      "https://your-domain.com/screenshot1.png",
-      "https://your-domain.com/screenshot2.png"
-    ],
-    "primaryCategory": "utility",
-    "tags": ["calculator", "math", "utility"],
-    "tagline": "Calculate Instantly",
-    "heroImageUrl": "https://your-domain.com/hero.png",
-    "ogTitle": "Calculator",
-    "ogDescription": "A simple calculator for basic math",
-    "ogImageUrl": "https://your-domain.com/og-image.png",
-    "noindex": false
-  }
+    function setX(uint _x) external {
+        x = _x;
+    }
 }
 ```
 
-■ Step 4 : 
-
-Added Required Images
-
-* i attach a image , so convert that image as required ratio and attach the same image in our mini app for all 3 forms .
-
-* >icon.png (300×300px) - A small icon of your app
-
-* >splash.png (200×200px) - A splash screen image
-
-* >screenshot.png (1284×2778px) - A screenshot showing how the app looks
-
-
-■ Step 5 
+■ Name : BASE-2
 ```
-Added Embed Metadata
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
-- Add fc:miniapp meta tag to layout.tsx metadata
-
-- Configure embed preview with:
-
-- Image URL for the 3:2 aspect ratio preview
-
-- Button configuration ("Open Calculator")
-
-- Launch frame settings
-
-- Splash image and background color
+contract BASE2 {
+    function value() external pure returns (uint) {
+        return 42;
+    }
+}
 ```
 
-■ Step 6: 
+■ Name : BASE-3
 ```
-Added Farcaster Miniapp SDK Integration
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
-- Install @farcaster/miniapp-sdk package (automatically included)
+contract BASE3 {
+    address public owner;
 
-- Update /app/page.tsx to import and use the SDK
+    constructor() {
+        owner = msg.sender;
+    }
+}
+```
+■ Name : BASE-4
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
-- Call sdk.actions.ready() when the app loads
+contract BASE4 {
+    bool public state;
 
-- This is the critical step that tells Base to hide the splash screen and display your calculator
+    function flip() external {
+        state = !state;
+    }
+}
 ```
 
-■ Step 7: 
+■ Name : BASE-5
 ```
-Update Next.js Configuration
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
-- Update /next.config.mjs to work with Next.js 16's Turbopack
+contract BASE5 {
+    uint public c;
 
-- Add turbopack: {} config to ensure clean builds
-
-- Remove webpack-specific configurations
+    function inc() external {
+        c++;
+    }
+}
 ```
 
-■ Step 8 : 
+■ Name : BASE-6
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
-* >Now for one time , click on deploy & deploy again 
+contract BASE6 {
+    event Logged(address user, uint time);
 
-Then Open Farcaster in Pc/Laptop 
+    function log() external {
+        emit Logged(msg.sender, block.timestamp);
+    }
+}
+```
 
-* >Enable Developer Mode 
+■ Name : BASE-7
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
-* >go to Developer section then & click on Mini app manifest tools 
+contract BASE7 {
+    string public data;
 
-* >then paste url ( check vidoe ) 
+    function set(string calldata _d) external {
+        data = _d;
+    }
+}
+```
+■ Name : BASE-8
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
-* >then click on fetch & then click on Genrate account association 
+contract BASE8 {
+    function add(uint a, uint b) external pure returns (uint) {
+        return a + b;
+    }
+}
+```
+■ Name : BASE-9
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
-* >scan qr code and verify your farcaster account 
+contract BASE9 {
+    function isSenderEOA() external view returns (bool) {
+        return msg.sender == tx.origin;
+    }
+}
+```
+■ Name : BASE-10
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
-* >Now copy everything and paste in V0 ( add prompt ) 
+contract BASE10 {
+    event Received(uint amount);
 
-Add this as account association  
+    receive() external payable {
+        emit Received(msg.value);
+    }
+}
+```
+■ Name : BASE-11
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
-* >then Reverify and Submit .
+contract BASE11 {
+    uint public deployedAt;
 
+    constructor() {
+        deployedAt = block.number;
+    }
+}
+```
+■ Name : BASE-12
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
-■ Step 9 : 
+contract BASE12 {
+    address public owner = msg.sender;
 
-Download Base App : https://play.google.com/store/apps/details?id=org.toshi
+    function isOwner() external view returns (bool) {
+        return msg.sender == owner;
+    }
+}
+```
+■ Name : BASE-13
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
-* >Create Account with email 
+contract BASE13 {
+    bytes32 public hash;
 
-* >then connect same farcaster account 
+    function setHash(bytes32 h) external {
+        hash = h;
+    }
+}
+```
+■ Name : BASE-14
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
+contract BASE14 {
+    mapping(address => uint) public score;
 
-* Then Visit : https://www.base.dev/
-
-* >signin with same base app email . 
-
-* >and follow video process
+    function setScore(uint s) external {
+        score[msg.sender] = s;
+    }
+}
+```
 
 Done✔️✔️
 

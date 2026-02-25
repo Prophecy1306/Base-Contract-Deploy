@@ -6,6 +6,8 @@ I’m deploying a series of lightweight Solidity contracts on the Base mainnet w
 
 </div>
 
+<img width="1907" height="886" alt="Screenshot 2026-02-26 004637" src="https://github.com/user-attachments/assets/9404cf0a-87b0-404d-ba8a-92d8ae6e9939" />
+
 <div align="center">
 
 ##  **Deployment Prerequisites⚙️**
@@ -23,7 +25,11 @@ I’m deploying a series of lightweight Solidity contracts on the Base mainnet w
 
 * >To execute this on the Base mainnet, you’ll need to hold at least $0.50 worth of ETH on the Base network to cover deployment and transaction fees.
 
+<div align="center">
+
 ##  **Setup Instructions🪜**
+
+</div>
 
 * >Step 1 : Click on `Create new workspace`
 * >Step 2 : Click on `Basic`

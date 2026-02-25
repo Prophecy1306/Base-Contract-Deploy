@@ -23,6 +23,11 @@ I’m deploying a series of lightweight Solidity contracts on the Base mainnet w
 
 * >To execute this on the Base mainnet, you’ll need to hold at least $0.50 worth of ETH on the Base network to cover deployment and transaction fees.
 
+##  **Setup Instructions🪜**
+
+* >Step 1 : Click on `Create new workspace`
+* >Step 2 : Click on `Basic`
+* >Step 3 : Then Click `Create a New workshop`
 
 <div align="center">
   

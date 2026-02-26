@@ -227,7 +227,11 @@ contract BASE14 {
 }
 ```
 
-Done✔️✔️
+* At last, you need to go to the guild and claim these `three quests`.
+
+<img width="1536" height="1024" alt="ChatGPT Image Feb 26, 2026, 10_39_12 PM" src="https://github.com/user-attachments/assets/81a62319-0613-48dc-8540-eb84578b7717" />
+
+# Done✔️✔️
 
 <pre>
 

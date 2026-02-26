@@ -34,6 +34,10 @@ I’m deploying a series of lightweight Solidity contracts on the Base mainnet w
 * >Step 1 : Click on `Create new workspace`
 * >Step 2 : Click on `Basic`
 * >Step 3 : Then Click `Create a New workshop`
+* >Step 4 : You have to `Create a new file` in the contract.
+* >Step 5 : Then upload `Name` to GitHub.
+* >step 6 : Then upload its name to GitHub.
+* If your wallet is not connected, then `turn off` all EVM extension from your browser except `Metamask Extension` for a few seconds or refresh it and then connect the MetaMask wallet.
 
 <div align="center">
   
